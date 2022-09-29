@@ -18,4 +18,5 @@ streamlit.text (fruityvice_response)
 
 
 #new section to display fruityvice api response
+streamlit.header('Fruityvice Fruit Advice")
 streamlit.text (fruityvice_response.json())
