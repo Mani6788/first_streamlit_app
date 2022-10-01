@@ -23,8 +23,6 @@ streamlit.text (fruityvice_response)
 #new section to display fruityvice api response
 streamlit.header("Fruityvice Fruit Advice")
 #streamlit.text (fruityvice_response.json())
-#
-#
 
 try:
   fruit_choice=streamlit.text_input('what fruit would you like inforamtion about?' ,'kiwi')
@@ -38,9 +36,8 @@ except URLError as e:
   streamlit.error()
 
   
-  streamlit.stop()
-
-
+  
+streamlit.stop()
 my_cnx=snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur=my_cnx.cursor()
 my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
