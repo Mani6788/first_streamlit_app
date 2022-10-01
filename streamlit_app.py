@@ -40,10 +40,12 @@ try:
     streamlit.dataframe(back_from_function)
     
     
-streamlit.stop()    
+   
 except URLError as e:
   streamlit.write("error occured")
   streamlit.error()
+   
+streamlit.stop() 
 
   
 
