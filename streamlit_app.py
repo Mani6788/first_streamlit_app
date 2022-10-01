@@ -25,7 +25,7 @@ streamlit.header("Fruityvice Fruit Advice")
 #streamlit.text (fruityvice_response.json())
 
 try:
-  fruit_choice=streamlit.text_input('what fruit would you like inforamtion about?' ,'kiwi')
+  fruit_choice=streamlit.text_input('what fruit would you like inforamtion about?')
   if not fruit_choice:
     stream_lit.error("please select  a fruit to get information")
   else:
